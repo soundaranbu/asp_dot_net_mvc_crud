@@ -4,13 +4,16 @@
     ViewBag.Title = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<div class="row">
+    <h3>User Details</h3>
+</div>
+<hr />
 <div class="row">
     <div class="col-3">
         <h6>Name</h6>
     </div>
     <div class="col-6">
-        <h6>@Model.FullName</h6>
+        @Model.FullName
     </div>
 </div>
 <div class="row">
@@ -18,7 +21,7 @@
         <h6>Mobile</h6>
     </div>
     <div class="col-6">
-        <h6>@Model.Mobile</h6>
+        @Model.Mobile
     </div>
 </div>
 <div class="row">
@@ -26,16 +29,16 @@
         <h6>Email</h6>
     </div>
     <div class="col-6">
-        <h6>@Model.Email</h6>
+        @Model.Email
     </div>
 </div>
 
 <div class="row">
     <div class="col-3">
-        <h6>Email</h6>
+        <h6>Mobile</h6>
     </div>
     <div class="col-6">
-        <h6>@Model.Email</h6>
+        Model.Mobile
     </div>
 </div>
 
@@ -44,7 +47,7 @@
         <h6>Time Created</h6>
     </div>
     <div class="col-6">
-        <h6>@Model.TimeCreated</h6>
+        @Model.TimeCreatedString
     </div>
 </div>
 <div class="row">
@@ -52,6 +55,12 @@
         <h6>Time Modified</h6>
     </div>
     <div class="col-6">
-        <h6>@Model.TimeModified</h6>
+        @Model.TimeModifiedString
     </div>
+</div>
+<hr />
+<div class="row">
+    <a class="btn btn-primary btn-sm" href="~/User/List">
+        Back
+    </a>
 </div>

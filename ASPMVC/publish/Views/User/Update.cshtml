@@ -3,7 +3,10 @@
     ViewBag.Title = "Update";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<div class="row">
+    <h3>Update User Details</h3>
+</div>
+<hr />
 <form method="post" action="~/User/Update/@Model.Id">
     <div class="form-group">
         <label class="col-form-label">User Name</label>
@@ -22,9 +25,10 @@
         <input type="email" class="form-control" name="Email" value="@Model.Email" />
     </div>
     <div class="form-group">
-        <input class="btn btn-primary" type="submit" placeholder="Update" name="Update" value="Update" />
+        <input class="btn btn-primary btn-sm" type="submit" placeholder="Update" name="Update" value="Update" />
+        <a class="btn btn-primary btn-sm" href="~/User/List">
+            Back
+        </a>
     </div>
 
 </form>
-
-
