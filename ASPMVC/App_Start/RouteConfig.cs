@@ -15,16 +15,9 @@ namespace ASPMVC
             routes.MapMvcAttributeRoutes();
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "User", action = "List", id = UrlParameter.Optional }
+                url: "{controller}/{action}",
+                defaults: new { controller = "User", action = "Index" }
             );
-
-            
-            //routes.MapRoute(
-            //    name: "Account",
-            //    url: "{controller}/{action}/{id}",
-            //    defaults: new { controller = "Account", action = "Index", id = UrlParameter.Optional }
-            //);
         }
     }
 }

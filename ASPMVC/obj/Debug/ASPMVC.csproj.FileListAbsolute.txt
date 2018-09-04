@@ -36,7 +36,6 @@ C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\bin\Microsoft.AI.DependencyCol
 C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\bin\Microsoft.AI.Web.xml
-C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\obj\Debug\ASPMVC.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\obj\Debug\ASPMVC.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\obj\Debug\ASPMVC.dll
 C:\Users\Administrator\source\repos\ASPMVC\ASPMVC\obj\Debug\ASPMVC.pdb

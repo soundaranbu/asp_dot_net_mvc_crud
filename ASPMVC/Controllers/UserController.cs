@@ -13,7 +13,7 @@ namespace ASPMVC.Controllers
         // GET: User
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("List");
         }
 
         [Route("User/List")]
