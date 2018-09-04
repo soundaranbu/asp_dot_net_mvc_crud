@@ -1,0 +1,57 @@
+﻿@model ASPMVC.Models.User
+
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-3">
+        <h6>Name</h6>
+    </div>
+    <div class="col-6">
+        <h6>@Model.FullName</h6>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <h6>Mobile</h6>
+    </div>
+    <div class="col-6">
+        <h6>@Model.Mobile</h6>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <h6>Email</h6>
+    </div>
+    <div class="col-6">
+        <h6>@Model.Email</h6>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <h6>Email</h6>
+    </div>
+    <div class="col-6">
+        <h6>@Model.Email</h6>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-3">
+        <h6>Time Created</h6>
+    </div>
+    <div class="col-6">
+        <h6>@Model.TimeCreated</h6>
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <h6>Time Modified</h6>
+    </div>
+    <div class="col-6">
+        <h6>@Model.TimeModified</h6>
+    </div>
+</div>

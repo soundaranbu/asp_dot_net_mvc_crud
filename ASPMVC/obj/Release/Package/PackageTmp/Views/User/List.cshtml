@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "Users List | ASPMVC CRUD";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-offset-4">
+        <a class="btn btn-primary" href="~/User/Create">
+            Create User
+        </a>
+    </div>
+
+</div>
+<div class="row">
+    <table class="table table-borderless w-100">
+        <thead>
+        <th>Name</th>
+        <th>Mobile</th>
+        <th>Email</th>
+        <th>Time Created</th>
+        <th>Time Modified</th>
+        <th>Action</th>
+        </thead>
+        <tbody>
+            @foreach (ASPMVC.Models.User User in (List<ASPMVC.Models.User>)ViewBag.UserList)
+            {
+                <tr>
+                    <td>@User.FullName</td>
+                    <td>@User.Mobile</td>
+                    <td>@User.Email</td>
+                    <td>@User.TimeCreatedString</td>
+                    <td>@User.TimeModifiedString</td>
+                    <td>
+                        @Html.ActionLink("View", "View", "User", new { id = User.Id }, new { @class = "badge badge-info" })
+                        @Html.ActionLink("Update", "Update", "User", new { id = User.Id }, new { @class = "badge badge-warning" })
+                        @Html.ActionLink("Delete", "Delete", "User", new { id = User.Id }, new { @class = "badge badge-danger" })
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>
